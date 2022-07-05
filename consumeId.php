@@ -1,7 +1,11 @@
 <?php
     // para obtener los datos del json en un array asociativo
 
-    $arr = array('id' => 10);
+    $arr = array('id' => 1);
+
+    $arr2 = array('id' => 10, 'nombre' => 'Esdras', 'desc' => 'chetu');
+    print_r(json_encode($arr2));
+    
     $id = json_encode($arr);
 
     $url = "http://localhost/apirestphp/controller/categoria.php?opcion=get";
