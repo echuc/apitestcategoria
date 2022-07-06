@@ -1,6 +1,6 @@
 <?php
     // para obtener los datos del json en un array asociativo
-    $data = json_decode(file_get_contents("http://localhost/apirestphp/controller/categoria.php?opcion=getAll"), true);
+    $data = json_decode(file_get_contents("https://apirestcategoria.herokuapp.com/controller/categoria.php?opcion=getAll"), true);
     print_r($data);
     echo "<hr>";
     var_dump($data);

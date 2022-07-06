@@ -8,7 +8,7 @@
     
     $id = json_encode($arr);
 
-    $url = "http://localhost/apirestphp/controller/categoria.php?opcion=get";
+    $url = "http://apirestcategoria.herokuapp.com/controller/categoria.php?opcion=get";
 
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_POST, true);
